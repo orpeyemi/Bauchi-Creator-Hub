@@ -11,7 +11,7 @@ export const generateProjectPitch = async (idea: string): Promise<string> => {
   try {
     const response = await ai.models.generateContent({
         model: "gemini-2.5-pro",
-        contents: `Based on this creative project idea: "${idea}", generate a structured business pitch. The pitch should be suitable for presenting to potential investors or for grant applications like the Tony Elumelu Foundation. The output MUST be in markdown format. Include the following sections: Executive Summary, Project Description, Target Audience, Market Strategy, Operational Plan, and Financial Projections (with placeholder numbers). Keep the tone professional and encouraging, tailored to a creative entrepreneur in Bauchi State, Nigeria.`,
+        contents: `Based on this creative project idea: "${idea}", generate a structured business pitch. The pitch should be suitable for presenting to potential investors or for grant applications like Arts Council England. The output MUST be in markdown format. Include the following sections: Executive Summary, Project Description, Target Audience, Market Strategy, Operational Plan, and Financial Projections (with placeholder numbers in GBP). Keep the tone professional, innovative, and encouraging, tailored to a creative entrepreneur in London, United Kingdom.`,
         config: {
             temperature: 0.7,
             topP: 0.95,
